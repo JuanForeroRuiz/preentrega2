@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -19,7 +21,7 @@
     <header class="position-relative w-100">
         <div class="container-fluid text-center p-0 m-0">
             <div class="row header align-items-center justify-content-center">
-                <img class="header-logo m-2" src="./img/header-logo.webp" alt="Logo Llamita Crochet">
+                <a href="index.html"><img class="header-logo m-2" src="./img/header-logo.webp" alt="Logo Llamita Crochet"></a>
                 <nav class="navbar d-flex fw-normal">
                     <div class="col">
                         <a class="header-link text-black" href="index.html">Inicio</a>
@@ -39,7 +41,7 @@
 
     </header>
 
-    <!-- Informative Cards Carousel -->
+    <!-- Carousel de cards informativas hacia los clientes -->
     <section>
         <section class="d-flex justify-content-center w-100 h-100">
             <section>
@@ -135,7 +137,7 @@
             <!-- tarjeta1 -->
             <div class="card bows card--featured justify-content-center align-items-center text-center ms-3 "
                 style="width: 18rem;">
-                <img src="./img/portada-card-bows.jpeg" class="card-img" alt="Maxibow (Moño grande) en crochet">
+                <img src="./img/maxibows/maxibow-vinotinto.jpeg" class="card-img" alt="Maxibow (Moño grande) en crochet">
                 <div class="card-body">
                     <h5 class="card-title mb-4 fw-bold">Maxi Bows</h5>
                     <!-- texto comentado ya que en la card no es relevante -->
@@ -151,7 +153,7 @@
             <!-- tarjeta 2 -->
             <div class="card amigurumi card--featured justify-content-center align-items-center text-center ms-3"
                 style="width: 18rem;">
-                <img src="./img/portada-card-amigurumi.jpg" class="card-img" alt="Dinosaurio amigurumi en Crochet">
+                <img src="./img/amigurumi/amigurumi-dinosaurio.jpg" class="card-img" alt="Dinosaurio amigurumi en Crochet">
                 <div class="card-body">
                     <h5 class="card-title mb-4 fw-bold">Dinorumi</h5>
                     <!-- texto comentado ya que en la card no es relevante -->
@@ -160,16 +162,16 @@
                         amor y cuidado en cada detalle.
                     </p> -->
                     <h6 class="product-card-price">$125.000 COP</h6>
-                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a>
+                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a> <!--Boton para comprar el producto de la card -->
                 </div>
             </div>
 
             <!-- tarjeta 3 -->
             <div class="card porta-gafas card--featured justify-content-center align-items-center text-center ms-3"
                 style="width: 18rem;">
-                <img src="./img/portada-card-portagafas.jpeg" class="card-img" alt="Portagafas en Crochet">
+                <img src="./img/portagafas/portagafas-sandia.jpeg" class="card-img" alt="Portagafas en Crochet">
                 <div class="card-body">
-                    <h5 class="card-title mb-4 fw-bold">Porta Gafas Frutal</h5>
+                    <h5 class="card-title mb-4 fw-bold">Porta Gafas Sandía</h5>
                     <!-- texto comentado ya que en la card no es relevante -->
                     <!-- <p class="card-text">Protege tus gafas con un toque de frescura y estilo.
 
@@ -177,14 +179,14 @@
                         manteniendo tus gafas a salvo mientras añades destellos coloridos a tu día.
                     </p> -->
                     <h6 class="product-card-price">$30.000 COP</h6>
-                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a>
+                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a> <!--Boton para comprar el producto de la card -->
                 </div>
             </div>
 
             <!-- tarjeta 4 -->
             <div class="card flores card--featured justify-content-center align-items-center text-center ms-3"
                 style="width: 18rem;">
-                <img src="./img/portada-card-flores.jpeg" class="card-img" alt="Flores Crochet">
+                <img src="./img/flores/ramo-abril-cerca.jpeg" class="card-img" alt="Flores Crochet">
                 <div class="card-body">
                     <h5 class="card-title mb-4 fw-bold">Ramo Abril Armonioso</h5>
                     <!-- texto comentado ya que en la card no es relevante -->
@@ -193,13 +195,13 @@
                         recuerdo que no se marchita.
                     </p> -->
                     <h6 class="product-card-price ">$70.000 COP</h6>
-                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a>
+                    <a href="#" class="btn btn-primary mt-3 card-featured-btn">Comprar</a> <!--Boton para comprar el producto de la card -->
                 </div>
             </div>
 
         </div>
 
-        <button class="btn  main-btn text-center fw-normal">Ver más destacados</button>
+         <button class="btn main-featured-btn text-center fw-normal">Ver más destacados</button> <!--Boton para ver mas productos destacados -->
 
     </main>
 
@@ -207,18 +209,18 @@
     <footer>
         <div class="footer-container d-flex flex-column mx-auto p-3">
             <div>
-                <h3 class="newsletter-title fw-bold mb-3 text-decoration-underline">
+                <h3 class="newsletter-title fw-bold mb-3 text-decoration-underline"> <!--Titulo general del footer -->
                     Suscríbete al newsletter
                 </h3>
             </div>
 
             <form class="newsletter-form d-flex flex-column justify-content-center mb-4" action="#" method="POST">
                 <div class="footer-info w-100">
-                    <label class="footer-title mb-1" for="email">Correo electrónico</label>
+                    <label class="footer-title mb-1" for="email">Correo electrónico</label> <!--Label del footer indicando al usuario que debe ingresar en el input -->
                     <div class="input-container ">
                         <input type="email" id="email" name="email" placeholder="Ingresa tu correo"
                             class="mt-2 justify-content-center footer-input me-2">
-                        <button class="btn btn-secondary submit-btn ms-2" type="submit">Suscribirse</button>
+                        <button class="btn btn-secondary submit-btn ms-2" type="submit">Suscribirse</button> <!--Boton para suscribirse a los correos de Llamita Crochet -->
                     </div>
                 </div>
 
